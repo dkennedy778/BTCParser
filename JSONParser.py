@@ -26,7 +26,7 @@ def parseTweets(filename):
     try:
         for dataPoint in data:
             Strtime = dataPoint["timestamp"]
-            tweetTime = time.strftime('%Y-%m-%d %H:%M:%S', time.strptime(dataPoint['timestamp'],'%a %b %d %H:%M:%S +0000 %Y'))
+            tweetTime = datetime.datetime.strptime(Strtime, "%Y-%m-%dT%H:%M:%S")
             tweetToBeStored = tweetAndTime(dataPoint,tweetTime)
             times.append(tweetToBeStored)
         #Now we have all of our tweets stored, lets sort them by their datetimes
