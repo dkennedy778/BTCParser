@@ -1,0 +1,44 @@
+2018-01-20 10:01:03,620 - memeMaker - INFO - program beginning execution at 2018-01-20 10:01:03.620933
+2018-01-20 10:01:03,624 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:01:03,624 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:01:03,624 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:01:21,656 - memeMaker - INFO - program beginning execution at 2018-01-20 10:01:21.656409
+2018-01-20 10:01:21,656 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:01:21,656 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:01:21,656 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:01:21,732 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-20 10:01:21,764 - memeMaker - ERROR - exception hit
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\postGradProjects\BTCParser\JSONParser.py", line 28, in parseTweets
+    tweetToBeStored = tweetAndTime(dataPoint,tweetTime)
+TypeError: __new__() takes 2 positional arguments but 3 were given
+2018-01-20 10:01:50,224 - memeMaker - INFO - program beginning execution at 2018-01-20 10:01:50.224638
+2018-01-20 10:01:50,224 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:01:50,224 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:01:50,224 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:01:50,302 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-20 10:02:14,724 - memeMaker - INFO - program beginning execution at 2018-01-20 10:02:14.724589
+2018-01-20 10:02:14,724 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:02:14,724 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:02:14,724 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:02:14,787 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-20 10:04:00,028 - memeMaker - INFO - program beginning execution at 2018-01-20 10:04:00.028013
+2018-01-20 10:04:00,028 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:04:00,028 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:04:00,028 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:04:00,106 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-20 10:04:00,106 - memeMaker - ERROR - exception hit
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\postGradProjects\BTCParser\JSONParser.py", line 28, in parseTweets
+    tweetToBeStored,tweetTime = tweetAndTime(dataPoint,tweetTime)
+TypeError: __new__() takes 2 positional arguments but 3 were given
+2018-01-20 10:04:45,475 - memeMaker - INFO - program beginning execution at 2018-01-20 10:04:45.475907
+2018-01-20 10:04:45,475 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:04:45,475 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:04:45,475 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:04:45,554 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-20 10:04:59,456 - memeMaker - INFO - program beginning execution at 2018-01-20 10:04:59.456118
+2018-01-20 10:04:59,471 - memeMaker - INFO - Parsing JSON data
+2018-01-20 10:04:59,471 - memeMaker - INFO - JSON data parsed
+2018-01-20 10:04:59,471 - memeMaker - INFO - populating meme tweets and pic URL lists
+2018-01-20 10:04:59,549 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
