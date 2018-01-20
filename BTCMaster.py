@@ -5,7 +5,7 @@ import JSONParser
 import datetime
 
 #Building the top level logger
-logger = logging.getLogger('memeMaker')
+logger = logging.getLogger('BTCParser')
 logger.setLevel(logging.DEBUG)
 #building a file handler which will log practically everything
 fh = logging.FileHandler('spam.log')
@@ -29,12 +29,5 @@ logger.info('Parsing JSON data')
 logger.info('JSON data parsed')
 filename = 'sampleData.json'
 
-#initializing return lists
-tweetsToMeme = []
-picURLs = []
-
-logger.info('populating meme tweets and pic URL lists')
-tweetsToMeme, picURLs = parseTweets(filename)
-logger.info('lists successfully populated')
 #Sentiment analysis goes here!
 logger.info('Execution completed at ' + str(datetime.datetime.now()))
