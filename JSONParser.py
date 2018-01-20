@@ -1,6 +1,4 @@
 import json
-from langdetect import detect
-from urlextract import URLExtract
 from pprint import pprint
 import datetime
 import logging
@@ -27,7 +25,7 @@ def parseTweets(filename):
         for dataPoint in data:
             Strtime = dataPoint["timestamp"]
             tweetTime = datetime.datetime.strptime(Strtime, "%Y-%m-%dT%H:%M:%S")
-            tweetToBeStored = tweetAndTime(dataPoint,tweetTime)
+            tweetToBeStored = (dataPoint,tweetTime)
             times.append(tweetToBeStored)
         #Now we have all of our tweets stored, lets sort them by their datetimes
         times.sort(key=lambda tup: tup[1])
