@@ -2,7 +2,6 @@ import json
 from pprint import pprint
 import datetime
 import logging
-import time
 import collections
 
 tweetAndTime = collections.namedtuple('tweet','dateTime')
@@ -31,9 +30,17 @@ def parseTweets(filename):
         times.sort(key=lambda tup: tup[1])
 
     #Next task is to split up tweets into blocks of ten minutes based on their date time
-    #First get the initial time
         startTweet = times[0]
         startTime = startTweet[1]
+        sortedTweets = []
+        TenMinBlockTweets = []
+        for tweet in times:
+         delta = tweet[1] - startTime
+         if (delta <= datetime.timedelta(minutes=10)): #funny bug here, can't compare a timedelta to an int, need to cast the int as a new timedelta
+            TenMinBlockTweets.append(tweet)
+         else:
+             sortedTweets.append(TenMinBlockTweets)
+             TenMinBlockTweets = []
 
     except Exception as e:
         JSONParser_logger.exception("exception hit")
