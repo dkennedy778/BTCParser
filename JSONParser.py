@@ -19,7 +19,6 @@ def parseTweets(filename):
     #Want to sort the tweets with datetime objects, so here I'm just parsing through all of the tweets and converting their timestamps to datetime objects. I then store all tweets with their datetime objects into a tuple, which I put into a list of tuples.
     #This'll make sorting easier, but imposes an immediate O(N) performance cost, which may be significant with large tweet batches.
 
-    #Oh fuck are timezones going to fuck me? Great
     try:
         for dataPoint in data:
             Strtime = dataPoint["timestamp"]
@@ -35,12 +34,14 @@ def parseTweets(filename):
         sortedTweets = []
         TenMinBlockTweets = []
         for tweet in times:
+         #Delta is the difference between the inital time and 
          delta = tweet[1] - startTime
          if (delta <= datetime.timedelta(minutes=10)): #funny bug here, can't compare a timedelta to an int, need to cast the int as a new timedelta
             TenMinBlockTweets.append(tweet)
          else:
              sortedTweets.append(TenMinBlockTweets)
              TenMinBlockTweets = []
+             startTime = tweet[1]
 
     except Exception as e:
         JSONParser_logger.exception("exception hit")
