@@ -10,10 +10,19 @@ price_usd = []
 volume_usd = []
 market_info = []
 
-print(r.text)
+response_data = r.json()
 
 #d = json.load(r)
 
-for data in r:
-    print(data["market_cap_by_available_supply"])
-
+for data in response_data["market_cap_by_available_supply"]:
+    print(data)
+print("market cap done")
+for data in response_data["price_btc"]:
+    print(data)
+print("price btc done")
+for data in response_data["price_usd"]:
+    print(data)
+print("price USD done")
+for data in response_data["volume_usd"]:
+    print(data)
+print("volume done")
