@@ -1,7 +1,19 @@
 import time
 import requests
+import json
 
-#https://www.reddit.com/r/learnprogramming/comments/7n2v4t/parsing_price_data_out_of_coincap/dt09akw/
 
 r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/")
+marketCap = []
+price_btc = []
+price_usd = []
+volume_usd = []
+market_info = []
+
 print(r.text)
+
+#d = json.load(r)
+
+for data in r:
+    print(data["market_cap_by_available_supply"])
+
