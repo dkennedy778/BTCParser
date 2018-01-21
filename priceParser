@@ -1,0 +1,7 @@
+import time
+import requests
+
+#https://www.reddit.com/r/learnprogramming/comments/7n2v4t/parsing_price_data_out_of_coincap/dt09akw/
+
+r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/")
+print(r.text)
