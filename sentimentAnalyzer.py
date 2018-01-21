@@ -17,10 +17,9 @@ def get_tweet_sentiment(tweets):
                 #weight the score, weighting scale in ln()
                 if(int(tweet[0]["retweets"]) > 0):
                     score = sentiment.polarity + math.log(int(tweet[0]["retweets"]), 2.71828)
-                    blockScore = blockScore + score
                 else:
                     score = sentiment.polarity
-                    blockScore = blockScore + score
+                blockScore = blockScore + score
         blockScore = blockScore/i
         i = 0
         print("BLOCK COMPLETE")
