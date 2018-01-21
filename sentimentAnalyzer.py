@@ -10,20 +10,18 @@ def get_tweet_sentiment(tweets):
         for tweet in block:
             text = tweet[0]["text"]
             sentiment = TextBlob(text)
-
             #Testing stuff
             #print(sentiment.polarity)
-            if(sentiment.polarity == 0):
-                i = i + 1
-
-            #weight the score, weighting scale in ln()
-            if(int(tweet[0]["retweets"]) > 0):
-                score = sentiment.polarity + math.log(int(tweet[0]["retweets"]), 2.71828)
-            else:
-                score = sentiment.polarity
-            blockScore = blockScore + score
-        blockScore = blockScore/len(block)
+            if(sentiment.polarity != 0):
+                i = i + 1 #incrementing the number of valid tweets in the block
+                #weight the score, weighting scale in ln()
+                if(int(tweet[0]["retweets"]) > 0):
+                    score = sentiment.polarity + math.log(int(tweet[0]["retweets"]), 2.71828)
+                    blockScore = blockScore + score
+                else:
+                    score = sentiment.polarity
+                    blockScore = blockScore + score
+        blockScore = blockScore/i
+        i = 0
         print("BLOCK COMPLETE")
         print(blockScore)
-
-    print(i)
