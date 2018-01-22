@@ -1,6 +1,7 @@
 import datetime
 import requests
 
+#Parses price information from a fixed URL
 def parsePrice():
     r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/") #this address may change
     marketCap = []
@@ -10,7 +11,7 @@ def parsePrice():
     market_info = []
 
     response_data = r.json()
-
+    
     for data in response_data["market_cap_by_available_supply"]:
         marketCap.append(data)
     print("market cap done")
@@ -23,11 +24,10 @@ def parsePrice():
     for data in response_data["volume_usd"]:
         volume_usd.append(data)
     print("volume done")
-    time = 0
-    #Convert market info to normal times here
+    
+    #Price data is in format (time, amount). The meaning of the amount field varies by datatype 
     for USDPricePoints in price_usd:
-       #convertTime = int(str(int(USDPricePoints[0]))[:-3])
-       date = datetime.datetime.fromtimestamp(USDPricePoints[0]/1e3)
+       date = datetime.datetime.fromtimestamp(USDPricePoints[0]/1e3) #see https://stackoverflow.com/questions/9744775/how-to-convert-integer-timestamp-to-python-datetime
        print(date)
 
     market_info.append(marketCap)
