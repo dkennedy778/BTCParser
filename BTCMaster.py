@@ -1,7 +1,9 @@
 
 from JSONParser import *
+from sentimentAnalyzer import *
+from priceParser import *
+from priceTweetComparator import *
 import logging
-import JSONParser
 import datetime
 
 #Building the top level logger
@@ -25,9 +27,15 @@ logger.info('program beginning execution at ' + str(datetime.datetime.now()))
 
 #This loop will be continuously run by a powershell script. JSONParser is not currently called but when I start running this on a continous loop it will be run as tweet parsing is completed
 logger.info('Parsing JSON data')
-#Parsing goes here
+tweets = parseTweets('sampleData.json')
 logger.info('JSON data parsed')
-filename = 'sampleData.json'
 
-#Sentiment analysis goes here!
+logger.info('conducting sentiment analysis')
+sentiments = get_tweet_sentiment(tweets)
+logger.info('parsing prices')
+marketInfo = parsePrice()
+
+logger.info('comparing price movements to twitter sentiment')
+comparePricesandTwitter(marketInfo,sentiments)
+
 logger.info('Execution completed at ' + str(datetime.datetime.now()))
