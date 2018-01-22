@@ -2,7 +2,7 @@ import datetime
 import requests
 
 def parsePrice():
-    r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/") #this address may change
+    r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/1516028059000/1516632859000/") #this address will change, sourced by clicking "1m" on https://coinmarketcap.com/currencies/bitcoin/ and checking the network tab for the referenced source.
     marketCap = []
     price_btc = []
     price_usd = []
@@ -23,10 +23,12 @@ def parsePrice():
     for data in response_data["volume_usd"]:
         volume_usd.append(data)
     print("volume done")
-    
+
     #Convert market info to normal times here
     for USDPricePoints in price_usd:
        USDPricePoints[0] = datetime.datetime.fromtimestamp(USDPricePoints[0]/1e3)
+    for times in price_usd:
+        print(times[0])
 
     market_info.append(marketCap)
     market_info.append(price_btc)
