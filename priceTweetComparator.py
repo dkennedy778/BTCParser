@@ -1,9 +1,10 @@
+
 def comparePricesandTwitter(marketInfo, sentiments):
 
     #Get % change for prices over period
-    initialPrice = marketInfo[3][1] #USD price changes are the last list in the master list, prices are the first index
+    initialPrice = marketInfo[2][1][1] #USD price changes are the last list in the master list, prices are the first index
     priceMovements = []
-    for prices in marketInfo[3]:
+    for prices in marketInfo[2]:
         priceMovements.append(get_change(initialPrice,prices[1]))
         initialPrice = prices[1]
 
