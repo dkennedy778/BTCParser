@@ -26,16 +26,20 @@ logger.addHandler(ch)
 logger.info('program beginning execution at ' + str(datetime.datetime.now()))
 
 #This loop will be continuously run by a powershell script. JSONParser is not currently called but when I start running this on a continous loop it will be run as tweet parsing is completed
+logger.info('parsing prices')
+marketInfo = parsePrice()
+logger.info('prices parsed')
 logger.info('Parsing JSON data')
-tweets = parseTweets('sampleData.json')
+tweets = parseTweets('sampleData.json',marketInfo)
 logger.info('JSON data parsed')
+
 
 logger.info('conducting sentiment analysis')
 sentiments = get_tweet_sentiment(tweets)
-logger.info('parsing prices')
-marketInfo = parsePrice()
+logger.info('sentiment analysis complete')
 
 logger.info('comparing price movements to twitter sentiment')
 comparePricesandTwitter(marketInfo,sentiments)
+logger.info('Price sentiment comparision complete')
 
 logger.info('Execution completed at ' + str(datetime.datetime.now()))
