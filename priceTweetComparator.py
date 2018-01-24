@@ -12,8 +12,9 @@ def comparePricesandTwitter(marketInfo, sentiments):
     sentimentMovements = []
     initialSentiment = sentiments[0]
     for sentiment in sentiments:
-        sentimentMovements.append(get_change(initialSentiment,sentiment[0]))
-        initialSentiment = sentiments[0]
+        if(initialSentiment != sentiment): #ignore first element
+            sentimentMovements.append(get_change(initialSentiment,sentiment))
+            initialSentiment = sentiment
 
     #Compare the two lists
     #May be worth ordering the sentiment blocks by the marketplace time periods given by coincap
