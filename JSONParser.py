@@ -7,9 +7,9 @@ import collections
 tweetAndTime = collections.namedtuple('tweet','dateTime')
 
 
-JSONParser_logger = logging.getLogger('memeMaker')
+JSONParser_logger = logging.getLogger('priceParser')
 namesList = []
-def parseTweets(filename):
+def parseTweets(filename,marketInfo):
     with open(filename) as data_file:
         data = json.load(data_file)
         JSONParser_logger.info('loaded data file ' + str(data_file))
@@ -28,20 +28,27 @@ def parseTweets(filename):
         #Now we have all of our tweets stored, lets sort them by their datetimes
         times.sort(key=lambda tup: tup[1])
 
-    #Next task is to split up tweets into blocks of ten minutes based on their date time
+        #Price the market data to find the initial sell date and price info
+        #In the future we might run the twitterscraper based on this information. For now we'll just assume the user has checked that their tweets correspond to an interval with pertinent price data
+        usdPrices = marketInfo[2]
+        initialPriceDate = usdPrices[0][0]
+        interval = usdPrices[1][0] - initialPriceDate
+
+    #Add a loop that matches up tweet parsing with the start of pricePoints. No point doing this now, I don't have enough data
+    #Next task is to split up tweets into blocks that reflect the price data based on their date time
         startTweet = times[0]
         startTime = startTweet[1]
         sortedTweets = []
         TenMinBlockTweets = []
         for tweet in times:
-         #Delta is the difference between the inital time and 
+         #Delta is the difference between the inital time and
          delta = tweet[1] - startTime
-         if (delta <= datetime.timedelta(minutes=10)): #funny bug here, can't compare a timedelta to an int, need to cast the int as a new timedelta
+         if (delta <= interval):
             TenMinBlockTweets.append(tweet)
          else:
              sortedTweets.append(TenMinBlockTweets)
              TenMinBlockTweets = []
              startTime = tweet[1]
-
+        return sortedTweets
     except Exception as e:
         JSONParser_logger.exception("exception hit")
