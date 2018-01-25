@@ -1,5 +1,7 @@
 import datetime
+import time
 import requests
+import pickle
 
 def parsePrice():
     r = requests.get("https://graphs2.coinmarketcap.com/currencies/bitcoin/1516028059000/1516632859000/") #this address will change, sourced by clicking "1m" on https://coinmarketcap.com/currencies/bitcoin/ and checking the network tab for the referenced source.
@@ -35,5 +37,10 @@ def parsePrice():
     market_info.append(price_usd)
     market_info.append(price_usd)
     market_info.append(volume_usd)
+
+    currentTime = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+
+    with open("marketInfo " + currentTime, "wb") as fp:
+        pickle.dump(1,fp)
 
     return market_info
