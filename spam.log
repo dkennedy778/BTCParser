@@ -42,3 +42,53 @@ TypeError: __new__() takes 2 positional arguments but 3 were given
 2018-01-20 10:04:59,471 - memeMaker - INFO - JSON data parsed
 2018-01-20 10:04:59,471 - memeMaker - INFO - populating meme tweets and pic URL lists
 2018-01-20 10:04:59,549 - memeMaker - INFO - loaded data file <_io.TextIOWrapper name='sampleData.json' mode='r' encoding='cp1252'>
+2018-01-24 11:38:20,006 - BTCParser - INFO - program beginning execution at 2018-01-24 11:38:20.006367
+2018-01-24 11:38:20,007 - BTCParser - INFO - parsing prices
+2018-01-24 11:38:20,762 - BTCParser - INFO - prices parsed
+2018-01-24 11:38:20,762 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:38:20,934 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:38:20,934 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:38:25,609 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:38:25,609 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-24 11:39:06,869 - BTCParser - INFO - program beginning execution at 2018-01-24 11:39:06.869531
+2018-01-24 11:39:06,870 - BTCParser - INFO - parsing prices
+2018-01-24 11:39:07,526 - BTCParser - INFO - prices parsed
+2018-01-24 11:39:07,526 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:39:08,543 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:39:08,543 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:39:24,235 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:39:24,236 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-24 11:40:18,347 - BTCParser - INFO - program beginning execution at 2018-01-24 11:40:18.346852
+2018-01-24 11:40:18,347 - BTCParser - INFO - parsing prices
+2018-01-24 11:40:19,049 - BTCParser - INFO - prices parsed
+2018-01-24 11:40:19,049 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:40:20,047 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:40:20,048 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:40:34,579 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:40:34,579 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-24 11:41:12,231 - BTCParser - INFO - program beginning execution at 2018-01-24 11:41:12.231723
+2018-01-24 11:41:12,231 - BTCParser - INFO - parsing prices
+2018-01-24 11:41:12,874 - BTCParser - INFO - prices parsed
+2018-01-24 11:41:12,874 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:41:13,042 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:41:13,043 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:41:17,529 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:41:17,529 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-24 11:41:17,529 - BTCParser - INFO - Price sentiment comparision complete
+2018-01-24 11:41:17,529 - BTCParser - INFO - Execution completed at 2018-01-24 11:41:17.529812
+2018-01-24 11:41:32,564 - BTCParser - INFO - program beginning execution at 2018-01-24 11:41:32.564692
+2018-01-24 11:41:32,564 - BTCParser - INFO - parsing prices
+2018-01-24 11:41:33,677 - BTCParser - INFO - prices parsed
+2018-01-24 11:41:33,677 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:41:34,690 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:41:34,690 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:41:49,071 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:41:49,071 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-24 11:42:52,157 - BTCParser - INFO - program beginning execution at 2018-01-24 11:42:52.157556
+2018-01-24 11:42:52,157 - BTCParser - INFO - parsing prices
+2018-01-24 11:42:53,193 - BTCParser - INFO - prices parsed
+2018-01-24 11:42:53,193 - BTCParser - INFO - Parsing JSON data
+2018-01-24 11:42:54,192 - BTCParser - INFO - JSON data parsed
+2018-01-24 11:42:54,192 - BTCParser - INFO - conducting sentiment analysis
+2018-01-24 11:43:08,414 - BTCParser - INFO - sentiment analysis complete
+2018-01-24 11:43:08,414 - BTCParser - INFO - comparing price movements to twitter sentiment

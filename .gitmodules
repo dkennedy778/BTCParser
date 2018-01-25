@@ -1,0 +1,3 @@
+[submodule "twitterscraper"]
+	path = twitterscraper
+	url = https://github.com/dkennedy778/twitterscraper
