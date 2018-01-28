@@ -1,4 +1,4 @@
-Set-Location -Path "D:/Users/Derek/PostGrad/BTCParser"
+Set-Location -Path "Your_Path"
 $startDate = Get-Date "1/12/2018"
 $currentDate = Get-Date
 $temp = $currentDate.ToShortDateString
