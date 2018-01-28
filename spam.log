@@ -92,3 +92,57 @@ TypeError: __new__() takes 2 positional arguments but 3 were given
 2018-01-24 11:42:54,192 - BTCParser - INFO - conducting sentiment analysis
 2018-01-24 11:43:08,414 - BTCParser - INFO - sentiment analysis complete
 2018-01-24 11:43:08,414 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-25 09:25:19,802 - BTCParser - INFO - program beginning execution at 2018-01-25 09:25:19.802756
+2018-01-25 09:25:19,802 - BTCParser - INFO - parsing prices
+2018-01-25 09:26:36,061 - BTCParser - INFO - program beginning execution at 2018-01-25 09:26:36.061557
+2018-01-25 09:26:36,061 - BTCParser - INFO - parsing prices
+2018-01-25 09:26:47,119 - BTCParser - INFO - program beginning execution at 2018-01-25 09:26:47.119849
+2018-01-25 09:26:47,119 - BTCParser - INFO - parsing prices
+2018-01-25 09:31:27,353 - BTCParser - INFO - program beginning execution at 2018-01-25 09:31:27.353503
+2018-01-25 09:31:27,353 - BTCParser - INFO - parsing prices
+2018-01-25 09:32:16,290 - BTCParser - INFO - program beginning execution at 2018-01-25 09:32:16.290429
+2018-01-25 09:32:16,290 - BTCParser - INFO - parsing prices
+2018-01-25 09:32:49,462 - BTCParser - INFO - program beginning execution at 2018-01-25 09:32:49.462787
+2018-01-25 09:32:49,462 - BTCParser - INFO - parsing prices
+2018-01-25 09:33:06,378 - BTCParser - INFO - program beginning execution at 2018-01-25 09:33:06.378359
+2018-01-25 09:33:06,378 - BTCParser - INFO - parsing prices
+2018-01-25 09:33:07,012 - BTCParser - INFO - prices parsed
+2018-01-25 09:33:07,014 - BTCParser - INFO - Parsing JSON data
+2018-01-25 09:33:07,280 - BTCParser - INFO - JSON data parsed
+2018-01-25 09:33:07,280 - BTCParser - INFO - conducting sentiment analysis
+2018-01-25 09:33:11,838 - BTCParser - INFO - sentiment analysis complete
+2018-01-25 09:33:11,838 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-25 09:33:11,838 - BTCParser - INFO - Price sentiment comparision complete
+2018-01-25 09:33:11,838 - BTCParser - INFO - Execution completed at 2018-01-25 09:33:11.838493
+2018-01-25 09:34:02,634 - BTCParser - INFO - program beginning execution at 2018-01-25 09:34:02.634547
+2018-01-25 09:34:02,634 - BTCParser - INFO - parsing prices
+2018-01-25 09:34:03,662 - BTCParser - INFO - prices parsed
+2018-01-25 09:34:03,662 - BTCParser - INFO - Parsing JSON data
+2018-01-25 09:34:03,834 - BTCParser - INFO - JSON data parsed
+2018-01-25 09:34:03,834 - BTCParser - INFO - conducting sentiment analysis
+2018-01-25 09:34:08,302 - BTCParser - INFO - sentiment analysis complete
+2018-01-25 09:34:08,304 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-25 09:34:08,304 - BTCParser - INFO - Price sentiment comparision complete
+2018-01-25 09:34:08,304 - BTCParser - INFO - Execution completed at 2018-01-25 09:34:08.304767
+2018-01-25 09:34:46,290 - BTCParser - INFO - program beginning execution at 2018-01-25 09:34:46.290497
+2018-01-25 09:34:46,290 - BTCParser - INFO - parsing prices
+2018-01-25 09:34:46,952 - BTCParser - INFO - prices parsed
+2018-01-25 09:34:46,952 - BTCParser - INFO - Parsing JSON data
+2018-01-25 09:34:47,122 - BTCParser - INFO - JSON data parsed
+2018-01-25 09:34:47,122 - BTCParser - INFO - conducting sentiment analysis
+2018-01-25 09:34:51,670 - BTCParser - INFO - sentiment analysis complete
+2018-01-25 09:34:51,670 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-25 09:34:51,670 - BTCParser - INFO - Price sentiment comparision complete
+2018-01-25 09:34:51,670 - BTCParser - INFO - Execution completed at 2018-01-25 09:34:51.670413
+2018-01-25 09:35:04,467 - BTCParser - INFO - program beginning execution at 2018-01-25 09:35:04.467950
+2018-01-25 09:35:04,467 - BTCParser - INFO - parsing prices
+2018-01-25 09:35:05,213 - BTCParser - INFO - prices parsed
+2018-01-25 09:35:05,213 - BTCParser - INFO - Parsing JSON data
+2018-01-25 09:35:05,388 - BTCParser - INFO - JSON data parsed
+2018-01-25 09:35:05,388 - BTCParser - INFO - conducting sentiment analysis
+2018-01-25 09:35:09,882 - BTCParser - INFO - sentiment analysis complete
+2018-01-25 09:35:09,882 - BTCParser - INFO - comparing price movements to twitter sentiment
+2018-01-25 09:35:09,882 - BTCParser - INFO - Price sentiment comparision complete
+2018-01-25 09:35:09,882 - BTCParser - INFO - Execution completed at 2018-01-25 09:35:09.882755
+2018-01-28 14:11:28,937 - BTCParser - INFO - program beginning execution at 2018-01-28 14:11:28.936780
+2018-01-28 14:11:28,937 - BTCParser - INFO - parsing prices
