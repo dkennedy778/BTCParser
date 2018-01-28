@@ -38,7 +38,7 @@ def parsePrice():
     market_info.append(price_usd)
     market_info.append(volume_usd)
 
-    currentTime = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+   currentTime = datetime.date.today().strftime("%B %d, %Y")
 
     with open("marketInfo " + currentTime, "wb") as fp:
         pickle.dump(1,fp)
