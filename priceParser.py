@@ -26,21 +26,21 @@ def parsePrice():
         volume_usd.append(data)
     print("volume done")
 
-    #Convert market info to normal times here
-    for USDPricePoints in price_usd:
-       USDPricePoints[0] = datetime.datetime.fromtimestamp(USDPricePoints[0]/1e3)
-    for times in price_usd:
-        print(times[0])
-
     market_info.append(marketCap)
     market_info.append(price_btc)
     market_info.append(price_usd)
-    market_info.append(price_usd)
     market_info.append(volume_usd)
 
-   currentTime = datetime.date.today().strftime("%B %d, %Y")
+    #Convert market info to normal times here
+    for list in market_info:
+        for InfoPoints in list:
+            InfoPoints[0] = datetime.datetime.fromtimestamp(InfoPoints[0]/1e3)
 
-    with open("marketInfo " + currentTime, "wb") as fp:
+    startTime = price_usd[0][0].strftime("%B %d, %Y")
+    currentTime = datetime.date.today().strftime("%B %d, %Y")
+
+    with open("MarketInfo " + startTime + "-" + currentTime, "wb") as fp:
         pickle.dump(1,fp)
 
     return market_info
+
