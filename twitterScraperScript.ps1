@@ -22,8 +22,6 @@ Workflow scraper{
     [System.Collections.ArrayList]$dateList
   )
 
-        #I used those ugly ifs to avoid a situation where the script was trying to parse a date in the future (i.e. outside the boundaries of the array).
-        #Please PM me if you have a more elegant solution 
         ForEach -Parallel ($date in $dateList)
         {      
               $endDate = $date.AddDays(1)
